@@ -1,4 +1,4 @@
-f<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
 <meta charset="UTF-8" />
@@ -13,6 +13,7 @@ f<!DOCTYPE html>
 	href="./css/barreNavigation/component.css" />
 <link rel="stylesheet" type="text/css" href="./css/style2.css">
 <link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/popup.css">
 <link rel="stylesheet" type="text/css" href="./css/demo.css" />
 <!-- Add jQuery library -->
 <script type="text/javascript"
@@ -28,7 +29,7 @@ f<!DOCTYPE html>
 	href='http://fonts.googleapis.com/css?family=Economica:700,400italic'
 	rel='stylesheet' type='text/css'>
 <noscript>
-	<link rel="stylesheet" type="text/css" href="../css/nojs.css" />
+	<link rel="stylesheet" type="text/css" href="./css/nojs.css" />
 </noscript>
 </head>
 <body>	
@@ -40,31 +41,17 @@ f<!DOCTYPE html>
 					<nav class="gn-menu-wrapper">
 						<div class="gn-scroller">
 							<ul class="gn-menu">
-								<li class="gn-search-item"><input placeholder="Rechercher"
-									type="search" class="gn-search"> <a
-									class="gn-icon gn-icon-search"><span>Recherche</span></a></li>
-								<li><a href="AccueilConnecte.html"
+								<li><a href="index.html"
 									class="gn-icon gn-icon-cog">Accueil</a></li>
-								<li><a href="ModifyProfile.html?id={{id_user}}"
-									class="gn-icon gn-icon-cog">Paramètres</a></li>
+								<li><a href="Annuaire.html"
+									class="gn-icon gn-icon-article">Annuaire</a></li>
 								<li><a href="../static/index.html"
 									class="gn-icon gn-icon-archive">Se déconnecter</a></li>
 							</ul>
 						</div>
 					</nav></li>
-				<li class="item_logo"><a href="index.html"><img
+				<li class="item_logo"><a href="./index.html"><img
 						src="./images/logo.png" class="logo_moveon"></a></li>
-				<li class="item_research">
-					<form id="form_research">
-						<div style="width: 432px; margin: auto;">
-							<img style="float: right;" src="./images/search.png" width="32"
-								height="32" alt="search"><input type="text"
-								class="input_research">
-						</div>
-					</form>
-				</li>
-				<li class="item_plus"><a href="Addevent.html"><img
-						src="./images/plus.png" class="photo_plus"></a></li>
 				<li class="item_people"><a href="profile.html?id={{id_user}}"><img
 						src="./images/people.png" class="photo_people"></a></li>
 				<li class="item_params"><a
@@ -76,6 +63,31 @@ f<!DOCTYPE html>
 					class="photo_invite" alt="Photo exemple"></li>
 			</ul>
 		</div>
+
+		<map name="worldmap">
+		  <area shape="rect" coords="300,100,580,270" alt="Sun" href="#oModal">
+		</map>
+		<div id="oModal" class="oModal">
+		  <div>
+		    <header style="background: transparent url('./images/banner_canada.jpg') background-size: contain;">
+		      <img src="./images/banner_canada.jpg" width="95%" height="100%" usemap="#worldmap">
+		      <a href="#fermer" title="Fermer la fenêtre" class="droite">X</a>
+		     </header>
+		     <section>
+		      <center><table>
+				<tr><td><img src="./images/wiki_transport.png"></td>
+				<td><img src="./images/wiki_school.png"></td>
+				<td><img src="./images/wiki_house.png"></td>
+				<td><img src="./images/wiki_entertainment.png"></td></tr>
+				<td><img src="./images/wiki_forum.png"></td></tr>
+				</table></center>
+		     <section>
+		     <footer class="cf">
+		      <a href="#fermer" class="btn droite" title="Fermer la fenêtre">Fermer</a>
+		     </footer>
+		  </div>
+		</div>
+		<img src="./images/world_map.jpg" width="100%" height="100%" usemap="#worldmap">
 		
 		<!-- /container -->
 		<script src="./js/barreNavigation/classie.js"></script>
@@ -87,6 +99,7 @@ f<!DOCTYPE html>
 			src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 	</div>
-	<div id="footer"></div>
+	<div id="footer">
+	<a href="#oModalExemple" role="button" class="btn droite">Ouvrir l’exemple</a></div>
 </body>
 </html>

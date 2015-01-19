@@ -18,7 +18,7 @@
 .gn-menu-main ul {
 		margin: 0;
 		padding: 0;
-		background: #fdb519;
+		background: #73716D;
 		color: bla;
 		list-style: none;
 		text-transform: none;
@@ -32,7 +32,7 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 60px;
+		height: 72px;
 		font-size: 13px;
 		z-index:1000;
 }
@@ -48,7 +48,7 @@
 .no-touch .gn-menu-main a:hover,
 .no-touch .gn-menu li.gn-search-item:hover,
 .no-touch .gn-menu li.gn-search-item:hover a {
-		background: #fdb519;
+		background: #73716D;
 		color: white;
 }
 
@@ -108,7 +108,7 @@
 		-webkit-transition: -webkit-transform 0.3s, width 0.3s;
 		-moz-transition: -moz-transform 0.3s, width 0.3s;
 		transition: transform 0.3s, width 0.3s;
-		background:#fdb519;
+		background:#73716D;
 }
 
 .gn-scroller {
@@ -284,20 +284,20 @@ input.gn-search:focus {
 		vertical-align: -2px;
 		width: 30px;
 		height: 3px;
-		background: #fdb519;
-		box-shadow: 0 -3px white, 0 -6px #fdb519, 0 -9px white, 0 -12px #fdb519, 0 -15px white;
+		background: #73716D;
+		box-shadow: 0 -3px white, 0 -6px #73716D, 0 -9px white, 0 -12px #73716D, 0 -15px white;
 		content: '';
 }
 
 .no-touch .gn-icon-menu:hover::before,
 .no-touch .gn-icon-menu.gn-selected:hover::before {
 		background: #fdb519;
-		box-shadow: 0 -3px white, 0 -6px #fdb519, 0 -9px white, 0 -12px #fdb519, 0 -15px white;
+		box-shadow: 0 -3px white, 0 -6px #73716D, 0 -9px white, 0 -12px #73716D, 0 -15px white;
 }
 
 .gn-icon-menu.gn-selected::before {
 		background: #fdb519;
-		box-shadow: 0 -3px white, 0 -6px #fdb519, 0 -9px white, 0 -12px #fdb519, 0 -15px white;
+		box-shadow: 0 -3px white, 0 -6px #73716D, 0 -9px white, 0 -12px #73716D, 0 -15px white;
 }
 
 /* styles for opening menu */
