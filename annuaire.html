@@ -82,7 +82,7 @@
 					var results = document.getElementById("results");
 				    results.innerHTML = "<h3>1 résultat trouvé.</h3>";
 				    results.innerHTML += "<h2>Julien Lepers</h2>";
-				    results.innerHTML +="<table id=\"tabResults\" class=\"table table-striped table-bordered table-condensed\">";
+				    results.innerHTML +="<table id=\"tabResults\" class=\"tabHover table table-striped table-bordered table-condensed\">";
 					results.innerHTML +="</table>";
 
 					var table = document.getElementById("tabResults");
@@ -115,10 +115,15 @@
 			    	}
 				}
 
-				$('tr').bind('click', function(){
-				    window.location = './profil.html';
-				    // Or, we can grab the HREF from the first anchor:
-				    // window.location = $('a:first', this).attr('href');
+				$(document).ready(function() {
+
+				    $('#tabResults tr').click(function() {
+				        var href = "./index.html";
+				        if(href) {
+				            window.location = href;
+				        }
+				    });
+
 				});
 				</script>
 				<div id="results"></div>
