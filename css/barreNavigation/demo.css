@@ -21,6 +21,7 @@ body {
 }
 
 .container > header {
+	height: 72px;
 	margin: 0 auto;
 	padding: 12em 2em;
 	padding-left: 370px;

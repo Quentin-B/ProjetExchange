@@ -43,7 +43,7 @@
 							<ul class="gn-menu">
 								<li><a href="index.html"
 									class="gn-icon gn-icon-cog">Accueil</a></li>
-								<li><a href="annuaire.html"
+								<li><a href="Annuaire.html"
 									class="gn-icon gn-icon-article">Annuaire</a></li>
 								<li><a href="../static/index.html"
 									class="gn-icon gn-icon-archive">Se déconnecter</a></li>
@@ -63,31 +63,6 @@
 					class="photo_invite" alt="Photo exemple"></li>
 			</ul>
 		</div>
-
-		<map name="worldmap">
-		  <area shape="rect" coords="300,100,580,270" alt="Sun" href="#oModal">
-		</map>
-		<div id="oModal" class="oModal">
-		  <div>
-		    <header style="background: transparent url('./images/banner_canada.jpg') background-size: contain;">
-		      <img src="./images/banner_canada.jpg" width="95%" height="100%" usemap="#worldmap">
-		      <a href="#fermer" title="Fermer la fenêtre" class="droite">X</a>
-		     </header>
-		     <section>
-		      <center><table>
-				<tr><td><img src="./images/wiki_transport.png"></td>
-				<td><img src="./images/wiki_school.png"></td>
-				<td><img src="./images/wiki_house.png"></td>
-				<td><img src="./images/wiki_entertainment.png"></td></tr>
-				<td><img src="./images/wiki_forum.png"></td></tr>
-				</table></center>
-		     <section>
-		     <footer class="cf">
-		      <a href="#fermer" class="btn droite" title="Fermer la fenêtre">Fermer</a>
-		     </footer>
-		  </div>
-		</div>
-		<img src="./images/world_map.jpg" width="100%" height="100%" usemap="#worldmap">
 		
 		<!-- /container -->
 		<script src="./js/barreNavigation/classie.js"></script>
@@ -97,9 +72,58 @@
 		</script>
 		<script type="text/javascript"
 			src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<div id="searchDiv" style="margin:80px 0 10px 0;">
+			<div id="wrapper_form">
+				<h2>Annuaire</h2>
+				<input name="searchTxt" type="text" maxlength="512" id="searchTxt" style="float:left;" onkeypress="return keyPressedCheck(event)"/>
+				<button style="float:left;" class="btn btn-primary btn-lg active" onclick="research()">Rechercher</button>
+				<script>
+				function research() {
+					var results = document.getElementById("results");
+				    results.innerHTML = "<h3>1 résultat trouvé.</h3>";
+				    results.innerHTML += "<h2>Julien Lepers</h2>";
+				    results.innerHTML +="<table id=\"tabResults\" class=\"table table-striped table-bordered table-condensed\">";
+					results.innerHTML +="</table>";
 
+					var table = document.getElementById("tabResults");
+				    var header = table.createTHead();
+				    var row = header.insertRow(0);
+				    var cell = row.insertCell(0);
+				    cell.innerHTML = "<b>Ecole</b>";
+				    cell = row.insertCell(0);
+				    cell.innerHTML = "<b>Statut</b>";
+				    cell = row.insertCell(0);
+				    cell.innerHTML = "<b>Prénom</b>";
+				    cell = row.insertCell(0);
+				    cell.innerHTML = "<b>Nom</b>";
+
+				    row = table.insertRow(1);
+				    //row.setAttribute('href',"./profil.html");
+				    cell = row.insertCell(0);
+				    cell.innerHTML = "Polytech Nice";
+				    cell = row.insertCell(0);
+				    cell.innerHTML = "Etudiant";
+				    cell = row.insertCell(0);
+				    cell.innerHTML = "Alain";
+				    cell = row.insertCell(0);
+				    cell.innerHTML = "Malin"; 
+				}
+
+				function keyPressedCheck(e) {
+					if (e.keyCode == 13) {
+				        research();
+			    	}
+				}
+
+				$('tr').bind('click', function(){
+				    window.location = './profil.html';
+				    // Or, we can grab the HREF from the first anchor:
+				    // window.location = $('a:first', this).attr('href');
+				});
+				</script>
+				<div id="results"></div>
+			</div>
+		</div>
 	</div>
-	<div id="footer">
-	<a href="#oModalExemple" role="button" class="btn droite">Ouvrir l’exemple</a></div>
 </body>
 </html>
