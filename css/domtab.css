@@ -1,0 +1,124 @@
+#content {
+  position:absolute;
+  min-height: 100%;
+  z-index: -3;
+}
+
+#left {
+  margin: 0 auto 50px auto;
+  width: 250px;
+  height:100%;
+  padding: 1em;
+  border-right:solid black 1px;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  bottom: 0px;
+  background: #fdb519;
+}
+
+#right {
+  margin:30px;
+  padding: 1em;
+  position: relative;
+  margin-left: 270px;
+}
+
+img.display{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:1em;
+    width:200px;
+    height:200px;
+}
+
+div.domtab{
+	padding:0 3em;
+	width:80%;
+	font-size:90%;
+}
+ul.domtabs{
+	float:left;
+	width:100%;
+	margin:2em 0 0 0;
+}
+ul.domtabs li{
+	float:left;
+	padding:0 .5em 0 0;
+}
+ul.domtabs a:link,
+ul.domtabs a:visited,
+ul.domtabs a:active,
+ul.domtabs a:hover{
+	width:9em;
+	padding:.2em 1em;
+	display:block;
+	background:#666;
+	color:#fff; /*Unselected Tab Name*/
+	height:3em;
+	font-weight:bold;
+	text-decoration:none;
+}
+html>body ul.domtabs a:link,
+html>body ul.domtabs a:visited,
+html>body ul.domtabs a:active,
+html>body ul.domtabs a:hover{
+	height:auto;
+	min-height:3em;
+}
+ul.domtabs a:hover{
+	background:rgba(253, 181, 25, 0.61); /*Hover Color*/
+}
+div.domtab div{
+	clear:both;
+	width:auto;
+	background:#fdb519; /*Selected Tab Desc BG*/
+	color:#fff; /*Selected Tab Text*/
+	padding:1em 3em;
+}
+ul.domtabs li.active a:link,
+ul.domtabs li.active a:visited,
+ul.domtabs li.active a:active,
+ul.domtabs li.active a:hover{
+	background:#fdb519; /*Selected Tab Color*/
+	color:#fff;
+}
+#domtabprintview{
+	float:right;
+	padding-right:1em;
+	text-align:right;
+}
+#domtabprintview a:link,
+#domtabprintview a:visited,
+#domtabprintview a:active,
+#domtabprintview a:hover{
+	color:#fff;
+}
+p{
+	margin:0 0 .5em 30px;
+	line-height:1.3em;
+}
+h2.domtabs{
+	font-size:1.3em;
+	text-transform:uppercase;
+	padding:0 0 .7em .2em;
+}
+h1.domtabs{
+	font-size:2em;
+	text-align:center;
+	font-weight:normal;
+	text-transform:uppercase;
+	padding:.5em 0;
+}
+h3.domtabs{
+    text-align:center;
+	font-size:1.5em;
+	font-weight:normal;
+	padding:.5em 0;
+	border-top:1px solid #666;
+}
+pre{
+	font-size:1.2em;
+	padding:1em;
+}

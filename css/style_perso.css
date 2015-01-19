@@ -1,0 +1,249 @@
+@CHARSET "ISO-8859-1";
+
+.nombreRes{
+    font-size: 35px;
+    font-family: arial;
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+#mapCanvas {
+    width: 45%;
+    height: 290px;
+    margin-top: 25px;
+   
+  }
+  
+  .ImageBorder
+{
+    border: 5px solid white;
+}
+  #infoPanel {
+    float: left;
+    margin-left: 10px;
+    color: #666666;
+    font-weight: bold;
+    vertical-align: middle;
+    color: white;
+    font-size: 15px;
+  }
+  #infoPanel div {
+    margin-bottom: 5px;
+      color: #666666;
+    font-weight: bold;
+    vertical-align: middle;
+    color: white;
+    font-size: 15px;
+  }
+
+.texto_azul{
+    font-size: 50px;
+    color: #4D90FE;
+    font-weight: bold;
+    font-family: arial;
+}
+
+table tr {
+    padding: 0 0 0 14px;
+}
+
+.txt{
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-weight: bold;
+	color:#141823; 
+}
+
+.txt.grande{
+	font-size:30px;
+}
+
+.txt.normal{
+	font-size:15px;
+}
+
+.txt.radio{
+	font-size:15px;
+	padding-bottom:7px; 
+}
+
+.selector{
+	font-size:13px;
+	font-weight: bold;
+	color: black;
+	background-color: #FFFFFF;
+	border-color: transparent;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+.rfloat{
+	float:right;
+}
+
+.lfloat{
+	float:left;
+}
+
+tbody{
+	word-wrap:normal;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+
+.label {
+    color: #141823;
+    cursor: pointer;
+    font-weight: bold;
+    vertical-align: middle;
+    font-size: 15px;
+    
+}
+
+
+
+.tablecol{
+	 padding:0px 5px 5px 0;
+}
+
+.button.green{
+    background-color: #96BD1B;
+    
+}
+
+.button.blue{
+    background-color: #4D90FE;
+    background-image: -moz-linear-gradient(center top , #4D90FE, #4787ED);
+}
+
+.button.red{
+    background-color: #FF3030;
+}
+
+.button {
+    border: 1px solid transparent;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: normal;
+    margin: 2px 0;
+    padding: 6px 10px;
+    position: relative;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.divRegistrar{
+	float:left;
+	padding-top: 105px;
+}
+
+.inputTextP, .inputTextG, .inputText, .inputTextDes{
+	color:black;
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+	padding-left: 7px;
+	border-color: transparent;
+	border-radius: 5px 5px 5px 5px;
+
+}
+
+.inputTextP{
+	width: 150px; 
+	height: 35px;
+
+}
+
+.inputTextG{
+	width: 680px; 
+	height: 35px;
+}
+
+.inputTextRecherche{
+	width:35%; 
+	height: 21px;
+        color:black;
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+	border-color: transparent;
+        margin: 3px 0px 3px 15px;
+        border: 0 none;
+        padding: 3px;
+}
+
+
+.inputTextDes{
+	width: 200px; 
+	height: 35px;
+        resize: none
+}
+.buttonRecherche{
+    background-image: url(../img/recherche.png);
+    background-size:20px 20px;
+    padding-bottom: 2px;
+    padding-top:2px;
+    height: 23px;
+    width: 23px;
+    background-color: white;
+    background-repeat:no-repeat;
+    background-position:center; 
+    border: 0 none;
+    
+}
+.pedidos {
+    font-size: 14px;
+    font-family: arial;
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+}
+
+pedidos:hover {
+    color: blue;
+}
+
+.inputText{
+	width: 155px; 
+	height: 17px;
+}
+
+.tablaOpcion {
+    border: 2.5px solid black; 
+    width: 800px;
+    background-color: white;
+}
+
+
+.celda {
+    border: 1px solid black; 
+    text-align: center; 
+    font-size: 20px;
+    font-family: arial;
+    padding: 5px 10px 5px 10px;
+}
+
+.tabla {
+    border: 1px solid black; 
+    border-collapse: collapse;
+    background-color: white;
+}
+.rfloat{
+	float:right;
+}
+
+.lfloat{
+	float:left;
+}
+
+.head{
+    height: 35px;
+    width: fit-content;
+    background: #FDB519;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
