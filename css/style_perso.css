@@ -649,3 +649,34 @@ input[type="text"]{
     color: #aaaaaa;
     cursor: pointer;
 }
+
+
+
+.main{
+    display: block;
+    background-color: #333333;
+    color:#dddddd;
+    margin:0;
+    padding: 60px 0;
+}
+
+.main:hover{
+    background-color: #444444;   
+    cursor: pointer;
+}
+
+.secondary{
+     display: block;
+    background-color: #666666;
+    margin:0;
+    padding: 40px 0;
+    color: white;
+}
+
+.secondary:hover{
+    background-color:  #777777;
+}
+
+
+
+.ui-state-focus { outline: none; }

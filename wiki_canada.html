@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXchange - Votre plateforme d'échange</title>
+<link rel="stylesheet" type="text/css"
+	href="./css/barreNavigation/normalize.css" />
+<link rel="stylesheet" type="text/css"
+	href="./css/barreNavigation/demo.css" />
+<link rel="stylesheet" type="text/css"
+	href="./css/barreNavigation/component.css" />
+
+<link rel="stylesheet" type="text/css" href="./css/style2.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/popup.css">
+<link rel="stylesheet" type="text/css" href="./css/demo.css" />
+
+<!-- Add jQuery library -->
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'></script>
+  
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+  
+  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+  
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.bootstrap-growl.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./css/style_perso.css" />
+
+<script src="js/barreNavigation/modernizr.custom.js"></script>
+<link
+	href='http://fonts.googleapis.com/css?family=Economica:700,400italic'
+	rel='stylesheet' type='text/css'>
+<noscript>
+	<link rel="stylesheet" type="text/css" href="./css/nojs.css" />
+</noscript>
+<link rel="stylesheet" type="text/css" href="./css/style_perso.css" />
+
+
+
+</head>
+<body>	
+	<div class="globalwrapper">
+		<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger"><a
+					class="gn-icon gn-icon-menu right-border"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li><a href="index.html"
+									class="gn-icon gn-icon-cog">Accueil</a></li>
+								<li><a href="Annuaire.html"
+									class="gn-icon gn-icon-article">Annuaire</a></li>
+								<li><a href="../static/index.html"
+									class="gn-icon gn-icon-archive">Se déconnecter</a></li>
+							</ul>
+						</div>
+					</nav></li>
+				<li class="item_logo"><a href="./index.html"><img
+						src="./images/logo.png"  alt ="ok" class="logo_moveon"></a></li>
+				<li class="item_people"><a href="profile.html?id={{id_user}}"><img
+						src="./images/people.png" alt ="ok" class="photo_people"></a></li>
+				<li class="item_params"><a
+					href="ModifyProfile.html?id={{id_user}}"><img
+						src="./images/params.png"  alt ="ok" class="photo_params"></a></li>
+				<li class="item_info"><a href="logout.html"><img
+						src="./images/logout.png"  alt ="ok" class="photo_info"></a></li>
+				<li class="item_photo"><img src="./images/profile_example.png"
+					class="photo_invite" alt="Photo exemple"></li>
+			</ul>
+		</div>
+
+		<!-- CONTENT PAGE START HERE -->
+		<ul id="breadcrumbs-two">
+	    <li><a href="">Forum</a></li>
+	    <li><a href="forum.html">Canada</a></li>
+	</ul>
+		<div class="page-header">
+		 	<div class="strut"></div>
+	        <h1 class="big-title">Wiki Canada</h1>
+      	</div>
+		<div class="container jumbotron" >
+					<div id="faqs-container" class="accordian">
+		    <h3 class="main">Montreal</h3>
+		    <div class="accordian">
+		        <h3 class="secondary">Logement</h3>
+
+			    <div>
+			        	<div class="question-summary narrow" id="question-summary-16439667">
+					
+			    		<div class="cp">
+			        	<div class="votes">
+				            <div class="mini-counts"><span title="3 votes">3</span></div>
+				            <div>votes</div>
+			        	</div>
+			        	<div class="status answered">
+			            <div class="mini-counts"><span title="1 answer">1</span></div>
+			            <div>answer</div>
+			        	</div>
+			        	<div class="views">
+			            <div class="mini-counts"><span title="110 views">110</span></div>
+			            <div>views</div>
+			        	</div>
+			    		</div>
+			    		<div class="summary">
+			        
+			            <h3><a href="topic.html" class="question-hyperlink" title="I am working with Ruby on Rails,Using nginx as web server and unicorn as application server. I tried to configure ssl for my application and Its works perfectly. The nginx configuration I used is ...">Comment trouver un logement à Montreal?</a></h3>
+			        	<div class="tags t-ruby-on-rails-3 t-ssl t-nginx">
+			            <a href="" class="post-tag" title="show questions tagged 'ruby-on-rails-3'" rel="tag">Canada</a> <a href="" class="post-tag" title="show questions tagged 'ssl'" rel="tag">Montreal</a> <a href="" class="post-tag" title="show questions tagged 'nginx'" rel="tag">Logement</a> 
+		        		</div>
+		        		</div>
+
+
+    		</div>
+
+
+		        		 <div ng-repeat="post in posts | orderBy:'-upvotes'" class="answer">
+      
+				          <div class="vote">
+				      		<img src="images/upv.png" alt="up"  ng-click="incrementUpvotes(post)">
+				      		<p>
+				      		 20
+				      		</p>
+				      		<img src="images/down.png" alt ="down"  ng-click="downVotes(post)">
+				      		</div>
+				       
+				        <div class="text">
+				        <h3>
+				         Une petite explication
+				        </h3>
+				        <p>
+				       		Kijiji est le site qui propose le plus d\'offres de location, tu devrais commencer par la
+				        </p>
+
+				        <div class="author"><p><b>Author:</b> Hugo</p>	<p><b>Date: </b>24/12/2015 22:02:10</p></div>
+				     	</div>
+	    				</div>
+
+    		</div>
+		        <h3 class="secondary">A2</h3>
+		        <div>Logement</div>
+		    </div>
+		    <h3 class="main"><a href="#">Toronto</a></h3>
+		    <div class="accordian">
+		        <h3 class="secondary">A2</h3>
+		        <div>AAAAAAAAAA2</div>
+		        <h3 class="secondary">A2</h3>
+		        <div>AAAAAAAAAA2</div>
+		    </div>
+		</div>
+        </div>
+
+
+		<!-- CONTENT PAGE END HERE -->
+		
+		<!-- /container -->
+		<script src="./js/barreNavigation/classie.js"></script>
+		<script src="./js/barreNavigation/gnmenu.js"></script>
+		<script>
+			new gnMenu(document.getElementById('gn-menu'));
+		
+  $("div.accordian").accordion({
+    autoHeight: false,
+    collapsible: true,
+    active: false
+});
+
+  </script>
+
+	</div>
+
+</body>
+</html>
