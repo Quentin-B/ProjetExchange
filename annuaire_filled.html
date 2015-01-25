@@ -11,6 +11,8 @@
 	href="./css/barreNavigation/demo.css" />
 <link rel="stylesheet" type="text/css"
 	href="./css/barreNavigation/component.css" />
+
+
 <link rel="stylesheet" type="text/css" href="./css/style2.css">
 <link rel="stylesheet" type="text/css" href="./css/style.css">
 <link rel="stylesheet" type="text/css" href="./css/popup.css">
@@ -45,7 +47,7 @@
 							<ul class="gn-menu">
 								<li><a href="index.html"
 									class="gn-icon gn-icon-cog">Accueil</a></li>
-								<li><a href="annuaire.html"
+								<li><a href="Annuaire.html"
 									class="gn-icon gn-icon-article">Annuaire</a></li>
 								<li><a href="../static/index.html"
 									class="gn-icon gn-icon-archive">Se déconnecter</a></li>
@@ -59,46 +61,45 @@
 				<li class="item_params"><a
 					href="ModifyProfile.html?id={{id_user}}"><img
 						src="./images/params.png" class="photo_params"></a></li>
-				
 				<li class="item_info"><a href="logout.html"><img
 						src="./images/logout.png" class="photo_info"></a></li>
-				<li><form action="annuaire.html" method="get"><input type="text" placeholder="Search" class="search-input" /></form> <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/></li>
 				<li class="item_photo"><img src="./images/profile_example.png"
 					class="photo_invite" alt="Photo exemple"></li>
 			</ul>
 		</div>
 
-		<map name="worldmap">
-		  <area shape="rect" coords="300,100,580,270" alt="Sun" href="#oModal">
-		</map>
-		<div id="oModal" class="oModal">
-		  <div>
-		    <header style="background: transparent url('./images/banner_canada.jpg') background-size: contain; text-align:center;">
-		    <a href="#fermer" title="Fermer la fenêtre" class="droite"><img src="images/close.png" alt="close" height="20" width="20" /></a>
-		      <h1>CANADA</h1>
-		      
-		     </header>
-		     <section>
-				<a class="img-popup">
-					<img src="./images/wiki_transport.png">
-					<p>Transport</p>
-				</a>
-				<a class="img-popup"><img src="./images/wiki_school.png">
-				<p>Transport</p></a>
-				
-				<a class="img-popup"><img src="./images/wiki_house.png">
-				<p>Logement</p></a>
-				<a class="img-popup"><img src="./images/wiki_entertainment.png">
-				<p>Loisirs</p></a>
-				<a href="forum.html" class="img-popup"><img src="./images/wiki_forum.png">
-				<p>Forum</p></a>
-		     <section>
-		     <footer class="cf">
-		     
-		     </footer>
-		  </div>
+		<!-- CONTENT PAGE START HERE -->
+		
+	<div class="page-header" style="margin-top:70px;">
+	 	<div class="strut"></div>
+        <h1 class="big-title">Annuaire</h1>
+      </div>
+		<div class="container jumbotron" >
+		<div class="title">
+			<h1>B<h1>
 		</div>
-		<img src="./images/world_map.jpg" width="100%" height="100%" usemap="#worldmap">
+
+		<table class="annuaire">
+			<tr>
+			<td class="title">Nom</td>
+			<td class="title">Prenom</td>
+			<td class="title">Statut</td>
+			<td class="title">Ecole</td>
+			</tr>
+			<tr class="content" onclick="document.location='profil.html'">
+				<td>Bitschené</td>
+				<td>Quentin</td>
+				<td>Etudiant</td>
+				<td>Polytech'Nice</td>
+			</tr>
+		</table>
+        </div>
+
+
+</div>
+
+		</div>
+		<!-- CONTENT PAGE END HERE -->
 		
 		<!-- /container -->
 		<script src="./js/barreNavigation/classie.js"></script>
@@ -110,7 +111,6 @@
 			src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 	</div>
-	<div id="footer">
-	<a href="#oModalExemple" role="button" class="btn droite">Ouvrir l’exemple</a></div>
+
 </body>
 </html>
