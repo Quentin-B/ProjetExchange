@@ -31,6 +31,7 @@
 <noscript>
 	<link rel="stylesheet" type="text/css" href="./css/nojs.css" />
 </noscript>
+<link rel="stylesheet" type="text/css" href="./css/style_perso.css" />
 </head>
 <body>	
 	<div class="globalwrapper">
@@ -66,18 +67,21 @@
 
 		<!-- CONTENT PAGE START HERE -->
 		<script type="text/javascript">
-		    function greenBackGround(param){
-		    	
-		    }
-		    function redBackGround(param){
-
-		    }
+		$(document).ready(function(){
+			$(".ok").click(function(event){
+				$(event.target).parent().parent().css( "background-color", "green" );
+			})
+		   
+		    $( ".nope" ).click(function(event){
+		    	$(event.target).parent().parent().css( "background-color", "red" );
+		    })
+		});
 
 		</script>
 		<div class="container jumbotron" style="margin-top:80px;">
 		<h1>Valider les matières</h1>
 			<div class="row col-md-8 col-md-offset-2">
-			<table class="table table-striped">
+			<table class="table">
 	            <thead>
 	              <tr>
 	                <th>Nom de la matiere</th>
@@ -93,42 +97,42 @@
 	                <td>Introduction aux IHM</td>
 	                <td>www.localhost.com/internet</td>
 	                <td>5</td>
-	                <td><a href="javascript:greenBackGround(row1);"><img src="./images/icon_ok.png"/></a><a href="javascript:redBackGround(row1);"><img src="./images/icon_nope.png"/></a></td>
+	                <td><img src="./images/icon_ok.png" class="ok" /><img src="./images/icon_nope.png" class="nope"/></td>
 	              </tr>
 	              <tr id="row2">
 	                <td>IA</td>
 	                <td>Introduction aux Intelligence Artificiel</td>
 	                <td>www.localhost.com/internet</td>
 	                <td>5</td>
-	                <td><a href="javascript:greenBackGround(row2);"><img src="./images/icon_ok.png"/></a><a href="javascript:redBackGround(row2);"><img src="./images/icon_nope.png"/></a></td>
+	                <td><img src="./images/icon_ok.png" class="ok"/><img src="./images/icon_nope.png" class="nope"/></td>
 	              </tr>
 	              <tr id="row3">
 	                <td>C++</td>
 	                <td>Introduction au C++</td>
 	                <td>www.localhost.com/internet</td>
 	                <td>5</td>
-	                <td><a href="javascript:greenBackGround(row3);"><img src="./images/icon_ok.png"/></a><a href="javascript:redBackGround(row3);"><img src="./images/icon_nope.png"/></a></td>
+	                <td><img src="./images/icon_ok.png" class="ok"/><img src="./images/icon_nope.png" class="nope"/></td>
 	              </tr>
 	              <tr id="row4">
 	                <td>JAVA</td>
 	                <td>Introduction au JAVA</td>
 	                <td>www.localhost.com/internet</td>
 	                <td>5</td>
-	                <td><a href="javascript:greenBackGround(row4);"><img src="./images/icon_ok.png"/></a><a href="javascript:redBackGround(row4);"><img src="./images/icon_nope.png"/></a></td>
+	                <td><img src="./images/icon_ok.png" class="ok"/><img src="./images/icon_nope.png" class="nope"/></td>
 	              </tr>
 	              <tr id="row5">
 	                <td>ASM</td>
 	                <td>Introduction a l'assembleur</td>
 	                <td>www.localhost.com/internet</td>
 	                <td>5</td>
-	                <td><a href="javascript:greenBackGround(row5);"><img src="./images/icon_ok.png"/></a><a href="javascript:redBackGround(row5);"><img src="./images/icon_nope.png"/></a></td>
+	                <td><img src="./images/icon_ok.png" class="ok"/><img src="./images/icon_nope.png" class="nope"/></td>
 	              </tr>
 	              <tr id="row6">
 	                <td>DSA</td>
 	                <td>Data Structure and Algorythme</td>
 	                <td>www.localhost.com/internet</td>
 	                <td>5</td>
-	                <td><a href="javascript:greenBackGround(row6);"><img src="./images/icon_ok.png"/></a><a href="javascript:redBackGround(row6);"><img src="./images/icon_nope.png"/></a></td>
+	                <td><img src="./images/icon_ok.png" class="ok"/><img src="./images/icon_nope.png"/ class="nope"></td>
 	              </tr>
 	            </tbody>
           	</table>

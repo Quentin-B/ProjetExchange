@@ -677,6 +677,8 @@ input[type="text"]{
     background-color:  #777777;
 }
 
-
+td{
+    background-color:transparent;
+}
 
 .ui-state-focus { outline: none; }
