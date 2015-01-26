@@ -607,6 +607,10 @@ input[type="text"]{
     padding:9px;
 }
 
+input[type="text"].search-input{
+    margin-left: 300px;
+}
+
 .search-input{
     float: left;
     display: block;
