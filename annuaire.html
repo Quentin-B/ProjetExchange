@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXchange - Votre plateforme d'échange</title>
+<link rel="stylesheet" type="text/css"
+	href="./css/barreNavigation/normalize.css" />
+<link rel="stylesheet" type="text/css"
+	href="./css/barreNavigation/demo.css" />
+<link rel="stylesheet" type="text/css"
+	href="./css/barreNavigation/component.css" />
+<link rel="stylesheet" type="text/css" href="./css/style2.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/popup.css">
+<link rel="stylesheet" type="text/css" href="./css/demo.css" />
+<!-- Add jQuery library -->
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.bootstrap-growl.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+<script src="js/barreNavigation/modernizr.custom.js"></script>
+<link
+	href='http://fonts.googleapis.com/css?family=Economica:700,400italic'
+	rel='stylesheet' type='text/css'>
+<noscript>
+	<link rel="stylesheet" type="text/css" href="./css/nojs.css" />
+</noscript>
+</head>
+<body>	
+	<div class="globalwrapper">
+		<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger"><a
+					class="gn-icon gn-icon-menu right-border"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li><a href="index.html"
+									class="gn-icon gn-icon-cog">Accueil</a></li>
+								<li><a href="Annuaire.html"
+									class="gn-icon gn-icon-article">Annuaire</a></li>
+								<li><a href="../static/index.html"
+									class="gn-icon gn-icon-archive">Se déconnecter</a></li>
+							</ul>
+						</div>
+					</nav></li>
+				<li class="item_logo"><a href="./index.html"><img
+						src="./images/logo.png" class="logo_moveon"></a></li>
+				<li class="item_people"><a href="profile.html?id={{id_user}}"><img
+						src="./images/people.png" class="photo_people"></a></li>
+				<li class="item_params"><a
+					href="ModifyProfile.html?id={{id_user}}"><img
+						src="./images/params.png" class="photo_params"></a></li>
+				<li class="item_info"><a href="logout.html"><img
+						src="./images/logout.png" class="photo_info"></a></li>
+				<li class="item_photo"><img src="./images/profile_example.png"
+					class="photo_invite" alt="Photo exemple"></li>
+			</ul>
+		</div>
+		
+		<!-- /container -->
+		<script src="./js/barreNavigation/classie.js"></script>
+		<script src="./js/barreNavigation/gnmenu.js"></script>
+		<script>
+			new gnMenu(document.getElementById('gn-menu'));
+		</script>
+		<script type="text/javascript"
+			src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<div id="searchDiv" style="margin:80px 0 10px 0;">
+			<div id="wrapper_form">
+				<h2>Annuaire</h2>
+				<input name="searchTxt" type="text" maxlength="512" id="searchTxt" style="float:left;" onkeypress="return keyPressedCheck(event)"/>
+				<button style="float:left;" class="btn btn-primary btn-lg active" onclick="research()">Rechercher</button>
+				<script>
+				function research() {
+					var results = document.getElementById("results");
+				    results.innerHTML = "<h3>1 résultat trouvé.</h3>";
+				    results.innerHTML += "<h2>Julien Lepers</h2>";
+				    results.innerHTML +="<table id=\"tabResults\" class=\"tabHover table table-striped table-bordered table-condensed\">";
+					results.innerHTML +="</table>";
+
+					var table = document.getElementById("tabResults");
+				    var header = table.createTHead();
+				    var row = header.insertRow(0);
+				    var cell = row.insertCell(0);
+				    cell.innerHTML = "<b>Ecole</b>";
+				    cell = row.insertCell(0);
+				    cell.innerHTML = "<b>Statut</b>";
+				    cell = row.insertCell(0);
+				    cell.innerHTML = "<b>Prénom</b>";
+				    cell = row.insertCell(0);
+				    cell.innerHTML = "<b>Nom</b>";
+
+				    row = table.insertRow(1);
+				    //row.setAttribute('href',"./profil.html");
+				    cell = row.insertCell(0);
+				    cell.innerHTML = "Polytech Nice";
+				    cell = row.insertCell(0);
+				    cell.innerHTML = "Etudiant";
+				    cell = row.insertCell(0);
+				    cell.innerHTML = "Alain";
+				    cell = row.insertCell(0);
+				    cell.innerHTML = "Malin"; 
+				}
+
+				function keyPressedCheck(e) {
+					if (e.keyCode == 13) {
+				        research();
+			    	}
+				}
+
+				$(document).ready(function() {
+
+				    $('#tabResults tr').click(function() {
+				        var href = "./index.html";
+				        if(href) {
+				            window.location = href;
+				        }
+				    });
+
+				});
+				</script>
+				<div id="results"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
