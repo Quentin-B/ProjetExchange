@@ -602,8 +602,8 @@ header h1{
 
 input[type="text"]{
     height: 40px;
-    width: 400px;
-    margin: 16px 0 16px 500px;
+    width: 500px;
+    margin: 16px auto;
     padding:9px;
 }
 
