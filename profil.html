@@ -31,6 +31,10 @@
 <noscript>
 	<link rel="stylesheet" type="text/css" href="./css/nojs.css" />
 </noscript>
+
+
+<link rel="stylesheet" type="text/css" href="./css/style_perso.css" />
+
 </head>
 <body>	
 	<div class="globalwrapper">
@@ -50,22 +54,23 @@
 							</ul>
 						</div>
 					</nav></li>
-				<li class="item_logo"><a href="./index.html"><img
-						src="./images/logo.png" class="logo_moveon"></a></li>
-				<li class="item_people"><a href="profile.html?id={{id_user}}"><img
-						src="./images/people.png" class="photo_people"></a></li>
-				<li class="item_params"><a
-					href="ModifyProfile.html?id={{id_user}}"><img
-						src="./images/params.png" class="photo_params"></a></li>
-				<li class="item_info"><a href="logout.html"><img
-						src="./images/logout.png" class="photo_info"></a></li>
+			<li><form action="annuaire_filled.html" method="get"><input type="text" placeholder="Search" class="search-input" /></form> <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/></li>
 				<li class="item_photo"><img src="./images/profile_example.png"
 					class="photo_invite" alt="Photo exemple"></li>
 			</ul>
 		</div>
 
 		<!-- CONTENT PAGE START HERE -->
-		<div class="container jumbotron" style="margin-top:80px;">
+			<ul id="breadcrumbs-two">
+	    <li><a href="index.html">Accueil</a></li>
+	    <li><a href="#">Profil</a></li>
+	</ul>
+
+	 <div class="page-header">
+	 	<div class="strut"></div>
+        <h1>Quentin Bitschene</h1>
+      </div>
+		<div class="container jumbotron" style="padding:30px 0;">
 			<div class="col-md-6">
 				<img src="./images/icon_profil.png"/>
 				<p>Quentin Bitschené</p>
